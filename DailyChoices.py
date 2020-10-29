@@ -51,10 +51,10 @@ def choices4():
         print(choice4, "is geen geldig antwoord sorry.")
         return choice4
 
-def dailychoices5():
+def choices5():
     sleep
     print("wat gaan we doen na dat gezeik met je ma huiswerk of gamen of misschien het nieuwe nummer van sefa luisteren? Antwoord: huiswerk / gamen / muziek")
-    choices5 = input().lower()
+    choice5 = input().lower()
     if choice5 == "huiswerk":
         print("lekker bezig man je gaat voor die voldoendes en miss is je ma dan ook blij")
     elif choice5 == "gamen":
