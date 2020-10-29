@@ -1,62 +1,76 @@
 import time
 
-def dailychoices():
-    print("Hey hoi hallo goeie morgen! Ga je nu je bed uit of niet en blijf je nog 10 minuten liggen? Antwoord met: Ja/Nee")
-    choice = input()
-    if choice.lower() == "ja":
+sleep = 'time.sleep(1)'
+
+def choices():
+    sleep
+    print("hallo kom je bed uit je moet naar school! kom je nog? Antwoord: Ja/Nee")
+    choice = input().lower()
+    if choice == "ja":
         print("Top kan je nog optijd komen!.")
-    elif choice.lower() == "nee":
+    elif choice == "nee":
         print("ah oke maar pas wel op dat je niet telaat komt.")
     else:
-        print(choice, "is niet een geldig antwoord.")
+        print(choice, "is geen geldig antwoord sorry.")
+        return choice
+        
 
-time.sleep(1)
-def dailychoices2():
-    print("wat eten we vandaag? Antwoord met: brood/pizza")
+def choices2():
+    sleep
+    print("wat eten we vanavond? Antwoord: brood/pizza")
     choice2 = input().lower()
     if choice2 == "brood":
-        print("ah lekker een broodje")
+        print("ah lekker een broodje met jam hoop ik:)")
     elif choice2 == "pizza":
-        print("hmm mijn favoriete lekker hoor!")
+        print("hmm mijn favoriete eten lekker hoor!")
     else:
-        print(choice2, "is niet een geldig antwoord.")
+        print(choice2, "is geen geldig antwoord sorry.")
+        return choice2
 
-time.sleep(1)
-def dailychoices3():
-    print("We moeten naar school toe wat ben je van plan om te doen? Met de trein of fietsen? Antwoord met: Trein / Fietsen")
-    choice3 = input()
-    if choice3.lower() == "trein":
-        print("lekker lui met de trein.")
-    elif choice3.lower() == "fietsen":
+def choices3():
+    sleep
+    print("We moeten naar school toe en je bent bijna te laat gaan we met de fiets of de auto? Antwoord: auto/fiets")
+    choice3 = input().lower()
+    if choice3 == "auto":
+        print("lekker lui met de auto man...")
+    elif choice3 == "fiets":
         print("We gaan lekker fietsen!")
     else:
-        print(choice3, "is niet een geldig antwoord.")
+        print(choice3, "is geen geldig antwoord sorry.")
+        return choice3
 
-time.sleep(1)
-def dailychoices4():
-    print("Je komt op school aan en je docent wordt boos omdat je iets niet hebt afgemaakt. Antwoord met: een discussie aangaan / het laten gaan")
-    choice4 = input()
-    if choice4.lower() == "een discussie aangaan":
-        print("je geeft tegenargumenten waarom je iets niet hebt gedaan en komt er gelukkig vanaf.")
-    elif choice4.lower() == "het laten gaan":
-        print("de docent blijft zeuren maar je luisterd er maar niet naar.")
+def choices4():
+    sleep
+    print("je komt thuis na een lange dag van school en je ma is boos wat doe je. Antwoord: een discussie aangaan / het laten gaan")
+    choice4 = input().lower()
+    if choice4 == "een discussie aangaan":
+        print("je krijgt veel gezeik maar je komt er gelukkig goed vanaf maar je dag is wel verpest")
+    elif choice4 == "het laten gaan":
+        print("je negeert je ma en gaat lekker muziek luisteren")
     else:
-        print(choice4, "is niet een geldig antwoord.")
+        print(choice4, "is geen geldig antwoord sorry.")
+        return choice4
 
-time.sleep(1)
 def dailychoices5():
-    print("wat gaan we doen huiswerk of gamen? Antwoord met: huiswerk / gamen")
-    choice5 = input()
-    if choice5.lower() == "huiswerk":
-        print("Lekker bezig maat! Je bent leer gierig.")
-    elif choice5.lower() == "gamen":
-        print("Is niet de slimste keuze maar gamen is altijd leuk!")
+    sleep
+    print("wat gaan we doen na dat gezeik met je ma huiswerk of gamen of misschien het nieuwe nummer van sefa luisteren? Antwoord: huiswerk / gamen / muziek")
+    choices5 = input().lower()
+    if choice5 == "huiswerk":
+        print("lekker bezig man je gaat voor die voldoendes en miss is je ma dan ook blij")
+    elif choice5 == "gamen":
+        print("niet zo slim maar sure ga je gang")
+    elif choice5 == "muziek":
+        print("goeie keuze, luister naar het nieuwe nummer van sefa! going under")
     else:
-        print(choice5, "is niet een geldig antwoord.")
+        print(choice5, "is geen geldig antwoord sorry.")
+        return choice5
 
-dailychoices()
-dailychoices2()
-dailychoices3()
-dailychoices4()
-dailychoices5()
-	
+
+choices()
+choices2()
+choices3()
+choices4()
+choices5()
+
+sleep
+print("nice je bent door de vragen heen! vier dat maar jij geluksvogel ;)")
