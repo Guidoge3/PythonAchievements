@@ -13,7 +13,7 @@ def choices():
         else:
             print(choice, "is geen geldig antwoord sorry.") 
         
-
+        
 def choices2():
     while True:
         print("wat eten we vanavond? Antwoord: brood/pizza")
